@@ -47,7 +47,7 @@ services:
       - ./redis:/data
 
   authentik-server:
-    image: ghcr.io/goauthentik/server:latest
+    image: ghcr.io/goauthentik/server:2025.8.1
     container_name: authentik-server
     restart: unless-stopped
     command: server
