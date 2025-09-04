@@ -24,7 +24,6 @@ fi
 
 # docker-compose.yml erstellen
 cat <<'EOF' > $BASE_DIR/docker-compose.yml
-version: "3.9"
 
 services:
   database:
