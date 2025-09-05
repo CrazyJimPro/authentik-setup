@@ -1,8 +1,3 @@
-Ah, ich sehe den Fehler 👍
-Das Problem ist: beim Kopieren ist dir der **Markdown-Codeblock (` ``` `)** an manchen Stellen verloren gegangen. Dadurch rendert GitHub die Abschnitte wie normalen Text und nicht als Code oder schön formatiert.
-
-Ich gebe dir hier eine saubere Version, die garantiert hübsch aussieht auf GitHub 👇
-
 ---
 
 ````markdown
