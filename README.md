@@ -1,3 +1,11 @@
+Ah, ich sehe den Fehler 👍
+Das Problem ist: beim Kopieren ist dir der **Markdown-Codeblock (` ``` `)** an manchen Stellen verloren gegangen. Dadurch rendert GitHub die Abschnitte wie normalen Text und nicht als Code oder schön formatiert.
+
+Ich gebe dir hier eine saubere Version, die garantiert hübsch aussieht auf GitHub 👇
+
+---
+
+````markdown
 # Authentik Setup Script for Raspberry Pi / Linux
 
 [![Docker](https://img.shields.io/badge/Docker-✔-2496ED?logo=docker&logoColor=white)](https://www.docker.com/) 
@@ -35,16 +43,23 @@ Es eignet sich besonders für den Einsatz auf einem **Raspberry Pi 5** oder jede
 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/<BENUTZERNAME>/authentik-setup/main/authentik-setup.sh)"
+````
 
-👉 Installation mit einer bestimmten Version (z. B. 2025.8.1):
+👉 Installation mit einer bestimmten Version (z. B. `2025.8.1`):
 
+```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/<BENUTZERNAME>/authentik-setup/main/authentik-setup.sh)" 2025.8.1
+```
 
-(ersetze <BENUTZERNAME> durch deinen GitHub-Benutzernamen)
-📂 Projektstruktur
+*(ersetze `<BENUTZERNAME>` durch deinen GitHub-Benutzernamen)*
+
+---
+
+## 📂 Projektstruktur
 
 Nach der Ausführung des Skripts sieht die Struktur so aus:
 
+```
 authentik/
 ├── database/               # PostgreSQL-Daten
 ├── redis/                  # Redis-Daten
@@ -53,48 +68,73 @@ authentik/
 │   └── custom-templates/   # Eigene Templates
 ├── .env                    # Automatisch generierte Umgebungsvariablen
 └── docker-compose.yml      # Compose-Datei für Authentik
+```
 
-🔑 Setup
+---
+
+## 🔑 Setup
 
 Nach erfolgreicher Installation zeigt das Script einen Link wie diesen an:
 
+```
 ✅ Authentik Setup abgeschlossen!
 Rufe den Initial Setup Wizard auf unter: http://192.168.178.50:9010/if/flow/initial-setup/
+```
 
-👉 Dort kannst du deinen ersten Admin-Account erstellen.
-🔄 Update auf neue Versionen
+👉 Dort kannst du deinen ersten **Admin-Account** erstellen.
 
-    Für die neueste Version genügt ein erneuter Aufruf des Scripts mit latest.
+---
 
-    Für eine feste Version einfach die gewünschte Version angeben, z. B.:
+## 🔄 Update auf neue Versionen
 
+* Für die **neueste Version** genügt ein erneuter Aufruf des Scripts mit `latest`.
+* Für eine **feste Version** einfach die gewünschte Version angeben, z. B.:
+
+```bash
 ./authentik-setup.sh 2025.9.0
+```
 
-🛠️ Verwaltung
+---
 
-    Container starten:
+## 🛠️ Verwaltung
 
-docker compose up -d
+* Container starten:
 
-Container stoppen:
+  ```bash
+  docker compose up -d
+  ```
 
-docker compose down
+* Container stoppen:
 
-Logs anzeigen:
+  ```bash
+  docker compose down
+  ```
 
-    docker logs -f authentik-server
+* Logs anzeigen:
 
-⚠️ Hinweise
+  ```bash
+  docker logs -f authentik-server
+  ```
 
-    Standardmäßig wird Port 9010 (HTTP) und 9444 (HTTPS) verwendet.
+---
 
-    Stelle sicher, dass keine anderen Dienste diese Ports blockieren.
+## ⚠️ Hinweise
 
-    Passwörter und Secrets werden automatisch in .env generiert – diese Datei nicht veröffentlichen!
+* Standardmäßig wird Port **9010 (HTTP)** und **9444 (HTTPS)** verwendet.
+* Stelle sicher, dass keine anderen Dienste diese Ports blockieren.
+* Passwörter und Secrets werden automatisch in `.env` generiert – diese Datei **nicht veröffentlichen**!
 
-📜 Lizenz
+---
+
+## 📜 Lizenz
 
 MIT License – frei zur Nutzung und Anpassung.
 
+```
 
 ---
+
+✅ Damit sieht es auf GitHub **schön formatiert** aus mit Codeblöcken, farbigen Badges, Strukturbaum usw.  
+
+👉 Soll ich dir das Ganze auch gleich **für BitwardenRS (Port 8088)** in genau demselben Style vorbereiten, sodass beide Projekte konsistent wirken?
+```
