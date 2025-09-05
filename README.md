@@ -1,6 +1,3 @@
----
-
-````markdown
 # Authentik Setup Script for Raspberry Pi / Linux
 
 [![Docker](https://img.shields.io/badge/Docker-✔-2496ED?logo=docker&logoColor=white)](https://www.docker.com/) 
@@ -38,6 +35,7 @@ Es eignet sich besonders für den Einsatz auf einem **Raspberry Pi 5** oder jede
 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/<BENUTZERNAME>/authentik-setup/main/authentik-setup.sh)"
+
 ````
 
 👉 Installation mit einer bestimmten Version (z. B. `2025.8.1`):
