@@ -124,10 +124,3 @@ Rufe den Initial Setup Wizard auf unter: http://192.168.178.50:9010/if/flow/init
 MIT License – frei zur Nutzung und Anpassung.
 
 ```
-
----
-
-✅ Damit sieht es auf GitHub **schön formatiert** aus mit Codeblöcken, farbigen Badges, Strukturbaum usw.  
-
-👉 Soll ich dir das Ganze auch gleich **für BitwardenRS (Port 8088)** in genau demselben Style vorbereiten, sodass beide Projekte konsistent wirken?
-```
