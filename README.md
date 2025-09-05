@@ -9,6 +9,8 @@
 Dieses Repository enthält ein Bash-Skript, das die Installation von [Authentik](https://goauthentik.io/) über **Docker Compose** automatisiert.  
 Es eignet sich besonders für den Einsatz auf einem **Raspberry Pi 5** oder jedem anderen Linux-Server mit Docker.  
 
+---
+
 ## ✨ Features
 
 - Erstellt automatisch die benötigte Ordnerstruktur (`database`, `redis`, `authentik`)  
@@ -39,7 +41,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/<BENUTZERNAME>/authentik
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/<BENUTZERNAME>/authentik-setup/main/authentik-setup.sh)" 2025.8.1
 
 (ersetze <BENUTZERNAME> durch deinen GitHub-Benutzernamen)
-
 📂 Projektstruktur
 
 Nach der Ausführung des Skripts sieht die Struktur so aus:
@@ -90,3 +91,10 @@ Logs anzeigen:
     Stelle sicher, dass keine anderen Dienste diese Ports blockieren.
 
     Passwörter und Secrets werden automatisch in .env generiert – diese Datei nicht veröffentlichen!
+
+📜 Lizenz
+
+MIT License – frei zur Nutzung und Anpassung.
+
+
+---
